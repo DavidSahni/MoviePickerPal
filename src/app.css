@@ -2,7 +2,7 @@
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
 
-@theme{
-  --color-oxford-blue: #0A2239;
-  --color-bluegray: #B9D7F3;
+@theme {
+	--color-oxford-blue: #0a2239;
+	--color-bluegray: #b9d7f3;
 }
