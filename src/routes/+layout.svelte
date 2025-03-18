@@ -5,7 +5,7 @@
 </script>
 
 <svelte:head>
-  <title>MoviePickerPal</title>
+	<title>MoviePickerPal</title>
 </svelte:head>
 
 <div class="bg-bluegray h-dvh">
