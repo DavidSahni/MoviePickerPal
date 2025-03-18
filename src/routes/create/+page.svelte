@@ -17,7 +17,6 @@
 	};
 
   let onDeleteClick = (movie: string) => {
-    console.log("CALLED");
     let toRemove = movieList.indexOf(movie);
     movieList.splice(toRemove, 1);
   }
@@ -26,7 +25,6 @@
     movieList = [];
   }
 
-  let intervalId: any;
   let elapsed = 0;
   let prevRandom = -1;
   let onSelectClick = () => {
@@ -58,7 +56,7 @@
     }
     setTimeout(() => timeOutFunction(50), 50);
   }
-  $inspect(movieList);
+  // $inspect(movieList);
 </script>
 
 <div class="flex flex-wrap w-full gap-5 items-center justify-center my-16">
