@@ -5,7 +5,7 @@
 	import { GetRandomByLength } from '$lib/utils/randomUtils';
 	import { time } from 'drizzle-orm/mysql-core';
 	import { ConsoleLogWriter } from 'drizzle-orm';
-
+	//todo hitting select with no options in window breaks page
 	let testArray = [
 		'Harry Potter 1',
 		'The Brutalist',
@@ -37,6 +37,9 @@
 	let elapsed = 0;
 	let prevRandom = -1;
 	let onSelectClick = () => {
+		if (movieList.length == 0) {
+			return;
+		}
 		if (movieList.length == 1) {
 			selection = movieList[0] + '!!!!';
 			return;
@@ -83,7 +86,7 @@
 			<StandardTextButton text="Clear" onClick={onClearClick} />
 		</div>
 		<div class="">
-			<StandardTextButton text="Select!" onClick={onSelectClick} />
+			<StandardTextButton text="Select!" onClick={onSelectClick} disabled={movieList.length == 0} />
 		</div>
 	</div>
 </div>

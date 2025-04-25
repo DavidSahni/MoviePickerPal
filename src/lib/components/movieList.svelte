@@ -8,7 +8,7 @@
 </script>
 
 <div class="flex min-h-96 min-w-80 items-center rounded border border-gray-400 bg-gray-300 p-2">
-  <ol class="w-full">
+	<ol class="w-full">
 		{#each movies as movie}
 			<li>
 				<div class="flex items-center gap-2">
